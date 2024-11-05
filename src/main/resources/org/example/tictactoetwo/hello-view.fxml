@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="center" prefHeight="400" prefWidth="320.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.tictactoetwo.controller.GameController">
+    <GridPane alignment="center" hgap="10" vgap="10">
+        <Button fx:id="button00" minHeight="100" minWidth="100" onAction="#handleButtonClick" style="-fx-font-size: 24;" />
+        <Button fx:id="button01" minHeight="100" minWidth="100" onAction="#handleButtonClick" style="-fx-font-size: 24;" />
+        <Button fx:id="button02" minHeight="100" minWidth="100" onAction="#handleButtonClick" style="-fx-font-size: 24;" />
+
+        <Button fx:id="button10" minHeight="100" minWidth="100" onAction="#handleButtonClick" style="-fx-font-size: 24;" />
+        <Button fx:id="button11" minHeight="100" minWidth="100" onAction="#handleButtonClick" style="-fx-font-size: 24;" />
+        <Button fx:id="button12" minHeight="100" minWidth="100" onAction="#handleButtonClick" style="-fx-font-size: 24;" />
+
+        <Button fx:id="button20" minHeight="100" minWidth="100" onAction="#handleButtonClick" style="-fx-font-size: 24;" />
+        <Button fx:id="button21" minHeight="100" minWidth="100" onAction="#handleButtonClick" style="-fx-font-size: 24;" />
+        <Button fx:id="button22" minHeight="100" minWidth="100" onAction="#handleButtonClick" style="-fx-font-size: 24;" />
+
+        <columnConstraints>
+            <ColumnConstraints minWidth="100" />
+            <ColumnConstraints minWidth="100" />
+            <ColumnConstraints minWidth="100" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="100" />
+            <RowConstraints minHeight="100" />
+            <RowConstraints minHeight="100" />
+        </rowConstraints>
+    </GridPane>
+
+    <HBox alignment="center" spacing="10">
+        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Player: 0 | Computer: 0" />
+    </HBox>
+
+    <Text style="-fx-font-size: 14px;" text="Player X's turn!" />
+
+    <HBox alignment="center" spacing="10">
+        <Button onAction="#resetGame" style="-fx-font-size: 14px;" text="Restart game" />
+        <Button onAction="#resetAllGame" style="-fx-font-size: 14px;" text="Restart all game!" /> <!-- Restart All button -->
+    </HBox>
+
+    <!-- Spacer to push content down -->
+    <Region style="-fx-pref-height: 50;" /> <!-- Adjust the height as needed -->
+</VBox>
