@@ -5,17 +5,17 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 
-public class GameView {
-    private Button[][] buttons; // Knappar för spelbrädet
-    private GridPane grid; // Layout för spelbrädet
-    private Label messageLabel; // Etikett för meddelanden
-    private Label scoreLabel; // Etikett för poäng
-    private Button restartButton; // Knapp för att återställa det aktuella spelet
-    private Button restartAllButton; // Knapp för att återställa alla spel
-    private VBox layout; // Huvudlayout för vyn
+public class  GameView {
+    private final Button[][] buttons; // Knappar för spelbrädet
+    private final Label messageLabel; // Etikett för meddelanden
+    private final Label scoreLabel; // Etikett för poäng
+    private final Button restartButton; // Knapp för att återställa det aktuella spelet
+    private final Button restartAllButton; // Knapp för att återställa alla spel
+    private final VBox layout; // Huvudlayout för vyn
 
     public GameView() {
-        grid = new GridPane(); // Initiera spelbrädet
+        // Layout för spelbrädet
+        GridPane grid = new GridPane(); // Initiera spelbrädet
         buttons = new Button[3][3]; // Skapa en 3x3 matris av knappar
         messageLabel = new Label(); // Initiera meddelandeetikett
         scoreLabel = new Label("Player: 0 | Computer: 0"); // Initiera poängetikett

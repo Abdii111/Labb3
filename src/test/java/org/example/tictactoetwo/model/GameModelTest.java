@@ -76,4 +76,5 @@ public class GameModelTest {
         assertNotNull(bestMove); // Säkerställ att ett drag returneras
         // Ytterligare kontroller kan läggas till baserat på spelstatus och förväntade resultat
     }
+
 }

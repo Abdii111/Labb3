@@ -124,4 +124,5 @@ public class GameModel {
         }
         return move; // Returnera bästa drag
     }
+
 }
